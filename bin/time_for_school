@@ -18,3 +18,23 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Eatworld"
+#jim.learn(some_knowledge) jim is a User superclass of student, no access to learn method
+
+more_knowledge = avi.teach
+
+steve.learn(more_knowledge)
+
+james = Student.new
+james.first_name = "James"
+james.last_name = "Eatworld"
+james.learn("Everything everything will be alright")
+
+puts "Steve learned all this important knowledge: '#{steve.knowledge}' from Avi, James learned this: '#{james.knowledge}"
+
+
+
+
